@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="David">
+  <meta name="description" content="a number guessing game">
+  <title> My Student Page </title>
+  <link rel="stylesheet" href="homepageStyle.css">
+  <audio src="songo.mp3" volume="0.01" loop> </audio>
+</head>
+<body>
+  <h1> <img src="longhorn.png" width="100"> Number Guessing Game <img src="longhorn.png" width="100"> </h1>
+
+  <p class="standard">
+    See if you can guess a random number between 1 and 100 in 10 turns or less. You'll see if your guess was too high or too low.
+  </p>
+
+    <div class="form">
+     <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
+     <input onkeypress="checkIfEnterPressed(event)" type="submit" value="Submit guess" class="guessSubmit">
+   </div>
+
+   <div class="resultParas">
+     <p class="guesses"></p>
+     <p class="lastResult"></p>
+     <p class="lowOrHi"></p>
+   </div>
+   <audio src="songo.mp3" id="songo" loop> This browser does not support the audio element. </audio>
+   <p class="spaceBefore">
+     <style>
+        .spaceBefore{
+           background-color: #cc5500;
+           border-color: #cc5500;
+           padding: 1% 0px 0px 0px ;
+        }
+     </style>
+   </p>
+   <div class="box" > <strong> Background Song: Bag Raiders - Shooting Stars </strong> </div>
+   <p class="spaceAfter">
+     <style>
+        .spaceAfter{
+           background-color: #cc5500;
+           border-color: #cc5500;
+           padding: 0px 0px 6% 0px;
+        }
+     </style>
+   </p>
+   <button class="play" onclick="playSong()" type="button"> Play Background Song </button>
+   <button class="pause" onclick="pauseSong()" type="button"> Pause Background song </button>
+   <p class="blah">
+     <style>
+     .blah{
+      box-sizing: border-box;
+      width: 17%;
+      text-align: center;
+      background-color: white;
+      border: 2px solid white;
+      border-radius: 2px;
+    }
+    </style>
+    Use this to adjust the track's volume </p>
+    <input id="volumeSlider" type="range" min="0.0" max="1.0" step="0.02" value="0.2" oninput="changeVolume()"/>
+    <script src="numberGame.js"> </script>
+    
+  </body>
+  <script src="audioControl.js"> </script>
+  </html>

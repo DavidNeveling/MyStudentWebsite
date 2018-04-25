@@ -1,0 +1,56 @@
+songo.mp3
+Animals as Leaders - The Brain Dance.mp3
+Crypt of the NecroDancer - Disco Descent.mp3
+Waveshaper - A Picture in Motion.mp3
+
+      			if(found){
+      				prev_i = i;
+      			}
+      			else{ // if all have been recently used
+	      			for(i = 0; i < lines_per_set; i++){ //set everything beyond the first line to zero
+  						if(i != prev_i)
+  							cache[2][set_index][i] = 0;
+      				}
+					cache[0][set_index][prev_i] = tag; // adjust the first line in the set
+					if(cache[1][set_index][prev_i] == 1){
+						if(verbose)
+							printf("eviction ");
+						eviction_count++;
+					}
+					else
+						cache[1][set_index][prev_i] = 1;
+					
+      			}
+
+      			  				int found = 0;
+      			for(i = 0; i < lines_per_set && !found; i++){
+      				//printf("\nin the loop: %ld", cache[2][set_index][i]);
+  					if(cache[2][set_index][i] == 0){ //if its not recently used
+  						cache[2][set_index][i] = 1;
+  						cache[0][set_index][i] = tag; // set this lines tag
+  						found = 1;
+  						//printf("\nfound not recently used: %ld", cache[1][set_index][i]);
+  						if(cache[1][set_index][i] == 1){ // if this line was valid we need to evict the line from the cache
+  							if(verbose)
+  								printf("eviction ");
+  							eviction_count++;
+  						}
+  						else{
+  							cache[1][set_index][i] = 1; // if it was not valid then set it to valid
+  						}
+  					}
+      			}
+      			if(!found){ // if all have been recently used
+	      			for(i = 1; i < lines_per_set; i++){ //set everything beyond the first line to zero
+  						cache[2][set_index][i] = 0;
+      				}
+					cache[0][set_index][0] = tag; // adjust the first line in the set
+					if(cache[1][set_index][0] == 1){
+						if(verbose)
+							printf("eviction ");
+						eviction_count++;
+					}
+					else
+						cache[1][set_index][i] = 1;
+					
+      			}

@@ -1,0 +1,72 @@
+html{
+   background-color: #cc5500;
+}
+ul{
+   background-color: white;
+   border: outset black;
+   border-width: thin;
+   padding-left: 40px;
+}
+h1{
+   background-color: white;
+   border: 2px solid black;
+   border-radius: 25px;
+   font-size: 400%;
+   font-family: "Times New Roman", cursive;
+   color: #cc5500;
+   text-align: center;
+}
+h3{
+   background-color: white;
+   border: 2px solid black;
+   border-radius: 25px;
+   font-size: 200%;
+   font-family: "Times New Roman", cursive;
+   color: #cc5500;
+   text-align: center;
+}
+.intro{
+   border: 2px solid black;
+   border-style: double;
+}
+.form{
+   text-align: center;
+   background-color: white;
+   border: 2px solid black;
+   border-style: double;
+}
+.resultParas{
+   text-align: center;
+   background-color: white;
+   border: 2px solid black;
+   border-style: double;
+}
+.songTitleBox{
+   background: white;
+   box-sizing: border-box;
+   width: 40%;
+   border: 1em solid white;
+   border-radius: 5px;
+   float: left;
+}
+.play{
+   left: 50%;
+}
+
+.pause{
+   left: 50%;
+}
+.standard{
+   display: block;
+   margin-top: 1em;
+   margin-bottom: 1em;
+   text-align: center;
+   margin-left: 0;
+   margin-right: 0;
+}
+
+.sketch{
+   margin: 0;
+   display: flex;
+   justify-content: center;
+}

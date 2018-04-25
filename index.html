@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+   <head>
+      <meta charset="utf-8">
+      <meta name="author" content="David Neveling">
+      <meta name="description" content="student homepage">
+      <title> David Neveling </title>
+      <link rel="stylesheet" href="homepageStyle.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+   </head>
+   <body>
+      <h1> <img src="longhorn.png" width="100"> <em> <strong> David Neveling </strong> </em> <img src="longhorn.png" width="100"> </h1>
+      <div class="intro">
+         <h2> About Me: </h2>
+         <ul class="outer">
+            <li> I am a Computer Science Major at the University of Texas </li>
+            <li> I am currently a Junior </li>
+            <li> I make and perform music as a hobby </li>
+               <ul class="inner">
+                  <li> <a href="https://soundcloud.com/user-479031712"> Here is a link </a> to my soundcloud </li>
+                  <li> <a href="http://www.cs.utexas.edu/~davannev/songs.html"> This page </a> has some of the better stuff on it </li>
+                  <li> Currently everything is a work in progress </li>
+               </ul>
+         </ul>
+      </div>
+      <!--form action="numberGame.html">
+      <input type="submit" value="Play a Number Guessing Game!" />
+      </form-->
+      <audio src="songo.mp3" id="songo" loop> This browser does not support the audio element. </audio>
+      <audio src="Waveshaper - A Picture in Motion.mp3" id="wivship" loop> This browser does not support the audio element. </audio>
+      <audio src="Crypt of the NecroDancer - Disco Descent.mp3" id="disdes" loop> This browser does not support the audio element. </audio>
+      <audio src="Animals as Leaders - The Brain Dance.mp3" id="beindinz" loop> This browser does not support the audio element. </audio>
+      <p class="spaceBefore" id="before">
+         <style>
+            .spaceBefore{
+               background-color: #cc5500;
+               border-color: #cc5500;
+               padding: 1% 0px 0px 0px ;
+            }
+         </style>
+      </p>
+      <div class="songTitleBox" id="songTitleBox"> <strong> LOLOLOL TOP TEXT BOTTOM TEXT GG THOT PATROL BBBOOOOOOOIIIIIIIIIIII </strong> </div>
+      <p class="spaceAfter" id="after">
+         <style>
+            .spaceAfter{
+               background-color: #cc5500;
+               border-color: #cc5500;
+               padding: 0px 0px 6% 0px;
+            }
+         </style>
+      </p>
+      <button class="play" onclick="playSong()" type="button"> Play Background Song </button>
+      <button class="pause" onclick="pauseSong()" type="button"> Pause Background Song </button>
+      <button class="prev" onclick="prevSong()" type="button"> Previous<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+     Song </button>
+      <button class="next" onclick="nextSong()" type="button"> Next Song </button>
+      <p>
+         <style>
+         p{
+            box-sizing: border-box;
+            width: 17%;
+            background-color: white;
+            border: 2px solid white;
+            border-radius: 2px;
+         }
+         </style>
+         Use this to adjust the track's volume </p>
+      <input id="volumeSlider" type="range" min="0.0" max="1.0" step="0.02" value="0.2" oninput="changeVolume()"/>
+   </body>
+   <script src="audioControl.js"> </script>
+   <h1> here's a simple thing made in p5.js </h1>
+   <!-- model is from TurboSquid-->
+   <script src="sketch.js" class="sketch"></script>
+   <!--script src="mobilecheck.js"> </script-->
+</html>
