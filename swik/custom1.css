@@ -133,7 +133,7 @@
 	background-color: var(--accent-color);
 }
 .theme-dark .guildsError-3cFMtY {
-	border-radius: 0;
+	border-radius: 25px;
 }
 
 /*Server Name, Channel List*/
