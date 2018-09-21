@@ -1,2 +1,5 @@
-h1 Welcome to Harp.
-h3 This is yours to own. Enjoy.
+h1 David Neveling cs373 Fall 2018 blog
+ul
+  each article, slug in public.articles._data
+    li
+      a(href="/articles/#{ slug }") #{ article.title }
