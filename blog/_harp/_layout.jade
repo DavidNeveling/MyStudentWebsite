@@ -3,6 +3,7 @@ html
   head
     link(rel="stylesheet" href="/MyStudentWebsite/blog/main.css")
   body
+    p= current.source
     if current.source !== "index"
       != partial("_shared/nav")
     != yield
