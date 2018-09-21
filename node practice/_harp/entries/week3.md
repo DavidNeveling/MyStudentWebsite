@@ -1,6 +1,6 @@
 # CS 373 Fall 2018 Week 3
 
-## What did you do this past week? ##
+## What did you do this past week?
 
 I did almost nothing. I let work for other classes pile up and eventually got overwhelmed in doing it all at the last minute. All of that led to me not doing much work for this one. I mainly tried to understand certain features that we when over like Docker and Gitlab-CI, but most of that didn’t directly translate to working on the project. I did enjoy going over more about how Python works. I picked it up last Spring Break and it has since become my favorite language, but I never really tried to learn it very in depth and just solved problems as they arose. It’s nice to learn a bunch of small things so I can avoid problems I know I would’ve had otherwise.
 
