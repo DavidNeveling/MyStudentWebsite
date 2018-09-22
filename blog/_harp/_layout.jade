@@ -1,9 +1,10 @@
 doctype
 html
   head
-    script(href="_shared/p_margins.js")
+
     link(rel="stylesheet" href="/MyStudentWebsite/blog/main.css")
   body(onresize="doIt()")
+    script function doIt() {console.log("change");tag_array = document.getElementsByTagName('p'); for (let i = 0; i < tag_array.length; i++) {tag_array[i].padding_left = window.innerWidth / 6;tag_array[i].padding_right = window.innerWidth / 6;}}
     if current.source !== "index"
       != partial("_shared/nav")
     != yield
