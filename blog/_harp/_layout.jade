@@ -1,8 +1,9 @@
 doctype
 html
   head
+    script(href="_shared/p_margins.js")
     link(rel="stylesheet" href="/MyStudentWebsite/blog/main.css")
-  body
+  body(onresize="doIt()")
     if current.source !== "index"
       != partial("_shared/nav")
     != yield
