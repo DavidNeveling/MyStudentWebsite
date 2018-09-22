@@ -4,7 +4,7 @@ html
 
     link(rel="stylesheet" href="/MyStudentWebsite/blog/main.css")
   body(onresize="doIt()")
-    script function doIt() {console.log("change");tag_array = document.getElementsByTagName('p'); for (let i = 0; i < tag_array.length; i++) {tag_array[i].padding_left = window.innerWidth / 6;tag_array[i].padding_right = window.innerWidth / 6;}}
+    script function doIt() {tag_array = document.getElementsByTagName('p'); for (let i = 0; i < tag_array.length; i++) {tag_array[i].style.padding = window.innerWidth / 6;console.log("changed" + tag_array[i].style.padding);}}
     if current.source !== "index"
       != partial("_shared/nav")
     != yield
