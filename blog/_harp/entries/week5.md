@@ -18,4 +18,4 @@ It was dumped on me midweek that some family was coming into to town Friday. Bec
 
 ## What's your pick-of-the-week or tip-of-the-week?
 
-This question gets harder and harder every week. 
+After recently having an interview I can say that you should treat them as a learning experience. That isn't to say don't take them seriously, but gather as much information as you can from the interviewers. The people interviewing me were actually very informative and I came out of the process knowing much more about what kind of environment goes in to this kind of work.
