@@ -140,6 +140,10 @@
 .name-3YKhmS {
 	text-align: center;
 }
+.container-3baos1 {
+	background-color: var(--main-color);
+	border-right: solid 1px var(--secondary-color);
+}
 .container-PNkimc {
 	background-color: var(--main-color);
 	border-right: solid 1px var(--secondary-color);
