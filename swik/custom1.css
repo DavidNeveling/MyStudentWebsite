@@ -140,6 +140,13 @@
 .name-3YKhmS {
 	text-align: center;
 }
+.container-2Thooq,
+.container-1UB9sr,
+.payment-xT17Mq,
+.expandedInfo-3kfShd {
+  	background-color: var(--main-color);
+	border-right: solid 1px var(--secondary-color);
+}
 .container-1UB9sr {
  	background-color: var(--main-color);
 	border-right: solid 1px var(--secondary-color);
