@@ -1,0 +1,82 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.Management.Infrastructure.CimInstance#Root/Microsoft/Windows/TaskScheduler/MSFT_TaskLogonTrigger</T>
+      <T>Microsoft.Management.Infrastructure.CimInstance#ROOT/Microsoft/Windows/TaskScheduler/MSFT_TaskTrigger</T>
+      <T>Microsoft.Management.Infrastructure.CimInstance#MSFT_TaskLogonTrigger</T>
+      <T>Microsoft.Management.Infrastructure.CimInstance#MSFT_TaskTrigger</T>
+      <T>Microsoft.Management.Infrastructure.CimInstance</T>
+      <T>System.Object</T>
+    </TN>
+    <ToString>MSFT_TaskLogonTrigger</ToString>
+    <Props>
+      <B N="Enabled">true</B>
+      <Nil N="EndBoundary" />
+      <Nil N="ExecutionTimeLimit" />
+      <Nil N="Id" />
+      <Obj N="Repetition" RefId="1">
+        <TN RefId="1">
+          <T>Microsoft.Management.Infrastructure.CimInstance#Root/Microsoft/Windows/TaskScheduler/MSFT_TaskRepetitionPattern</T>
+          <T>Microsoft.Management.Infrastructure.CimInstance#MSFT_TaskRepetitionPattern</T>
+          <T>Microsoft.Management.Infrastructure.CimInstance</T>
+          <T>System.Object</T>
+        </TN>
+        <ToString>MSFT_TaskRepetitionPattern</ToString>
+        <Props>
+          <Nil N="Duration" />
+          <S N="Interval">PT5M</S>
+          <B N="StopAtDurationEnd">false</B>
+          <Nil N="PSComputerName" />
+        </Props>
+        <MS>
+          <Obj N="__ClassMetadata" RefId="2">
+            <TN RefId="2">
+              <T>System.Collections.ArrayList</T>
+              <T>System.Object</T>
+            </TN>
+            <LST>
+              <Obj RefId="3">
+                <MS>
+                  <S N="ClassName">MSFT_TaskRepetitionPattern</S>
+                  <S N="Namespace">Root/Microsoft/Windows/TaskScheduler</S>
+                  <S N="ServerName">HOUSDNEVELING</S>
+                  <I32 N="Hash">1191373672</I32>
+                  <S N="MiXml">&lt;CLASS NAME="MSFT_TaskRepetitionPattern"&gt;&lt;PROPERTY NAME="Duration" TYPE="string"&gt;&lt;/PROPERTY&gt;&lt;PROPERTY NAME="Interval" TYPE="string"&gt;&lt;/PROPERTY&gt;&lt;PROPERTY NAME="StopAtDurationEnd" TYPE="boolean"&gt;&lt;/PROPERTY&gt;&lt;/CLASS&gt;</S>
+                </MS>
+              </Obj>
+            </LST>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="StartBoundary" />
+      <Nil N="Delay" />
+      <Nil N="UserId" />
+      <Nil N="PSComputerName" />
+    </Props>
+    <MS>
+      <Obj N="__ClassMetadata" RefId="4">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="5">
+            <MS>
+              <S N="ClassName">MSFT_TaskTrigger</S>
+              <S N="Namespace">ROOT/Microsoft/Windows/TaskScheduler</S>
+              <S N="ServerName">HOUSDNEVELING</S>
+              <I32 N="Hash">1191332072</I32>
+              <S N="MiXml">&lt;CLASS NAME="MSFT_TaskTrigger"&gt;&lt;PROPERTY NAME="Enabled" TYPE="boolean"&gt;&lt;/PROPERTY&gt;&lt;PROPERTY NAME="EndBoundary" TYPE="string"&gt;&lt;/PROPERTY&gt;&lt;PROPERTY NAME="ExecutionTimeLimit" TYPE="string"&gt;&lt;/PROPERTY&gt;&lt;PROPERTY NAME="Id" TYPE="string"&gt;&lt;/PROPERTY&gt;&lt;PROPERTY NAME="Repetition" TYPE="string"&gt;&lt;QUALIFIER NAME="EmbeddedInstance" TYPE="string"&gt;&lt;VALUE&gt;MSFT_TaskRepetitionPattern&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PROPERTY&gt;&lt;PROPERTY NAME="StartBoundary" TYPE="string"&gt;&lt;/PROPERTY&gt;&lt;/CLASS&gt;</S>
+            </MS>
+          </Obj>
+          <Obj RefId="6">
+            <MS>
+              <S N="ClassName">MSFT_TaskLogonTrigger</S>
+              <S N="Namespace">Root/Microsoft/Windows/TaskScheduler</S>
+              <S N="ServerName">HOUSDNEVELING</S>
+              <I32 N="Hash">1191323752</I32>
+              <S N="MiXml">&lt;CLASS NAME="MSFT_TaskLogonTrigger" SUPERCLASS="MSFT_TaskTrigger"&gt;&lt;PROPERTY NAME="Delay" TYPE="string"&gt;&lt;/PROPERTY&gt;&lt;PROPERTY NAME="UserId" TYPE="string"&gt;&lt;/PROPERTY&gt;&lt;/CLASS&gt;</S>
+            </MS>
+          </Obj>
+        </LST>
+      </Obj>
+    </MS>
+  </Obj>
+</Objs>
